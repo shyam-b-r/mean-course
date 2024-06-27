@@ -1,0 +1,8 @@
+name: First WF
+on: [workflow_dispatch, push]
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wish me
+        run: echo 'Good morning'
